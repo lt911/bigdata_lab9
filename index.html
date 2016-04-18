@@ -1,0 +1,75 @@
+<html>
+<meta charset="utf-8">
+<style>
+h4{
+    margin:0;
+    padding:0;
+    line-height:10px;
+    margin-left: 280px;
+}
+
+.ui{
+    margin-top: 30px;
+    margin-left: 200px;
+}
+
+.mpg{
+    margin-top: 10px;
+}
+
+.plot{
+	margin:-70;
+	padding:0;
+}
+
+.bar {
+  fill: steelblue;
+}
+
+.bar:hover {
+  fill: brown;
+}
+
+.axis {
+  font: 15px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+
+</style>
+<head>
+  <title>Big Data's Website</title>
+  <!-- <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script> -->
+  <script src="bower_components/jQuery/dist/jquery.min.js"></script>
+  <script src="bower_components/d3/d3.min.js"></script>
+</head>
+<body>
+<h4 id="hovered">chevrolet chevelle malibu</h4>
+<div class="plot">
+	<script type="text/javascript" src="main.js"></script>
+  <svg></svg>
+</div>
+<div class="ui">
+  <div>
+    <label>X-Axis</label>
+    <select id="sel-x">
+    </select>
+    <label>Y-Axis</label>
+    <select id="sel-y">
+    </select>
+  </div>
+  <div class='mpg'>
+    <input id="mpg-min" type="text" value="0" size="10">
+    <input id="mpg-max" type="text" value="30" size="10">
+    <button id="update">Query MPG</button>
+  </div>
+</div>
+</body>
+</html>
